@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+@layer utilities {
+    .font-tilt-prism {
+        font-family: "Tilt Prism", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "XROT" 0,
+          "YROT" 0;
+    }
+    .font-cinzel {
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+    .rochester {
+        font-family: "Rochester", cursive;
+        font-weight: 500;
+        font-style: normal;
+      }
+    .suez-one-regular {
+        font-family: "Suez One", serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+     
+      
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+      @keyframes slide-in {
+        0% {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    
+      .animate-fade-in {
+        animation: fade-in 1.5s ease-out forwards;
+      }
+    
+      .animate-slide-in {
+        animation: slide-in 1.5s ease-out forwards;
+      }
+  }
+
+
+ 
